@@ -1,0 +1,10 @@
+hash: edd1b6d748d29ab9c7f7c30ad3f1543bad491ec90cd22aed5e4b42f72200b3b0
+updated: 2017-07-06T21:44:15.44816752+02:00
+imports:
+- name: github.com/gin-gonic/gin
+  version: e0fd6238d3cb237d3eb4c3d13792caa265ecdf29
+- name: github.com/jinzhu/gorm
+  version: c1b9cf186e4bcd8e5d566ef43f2ae2dfe22dc34e
+  subpackages:
+  - dialects/postgres
+testImports: []

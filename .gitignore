@@ -1,0 +1,31 @@
+### Intellij ###
+.idea/
+*.iws
+*.iml
+/out/
+.idea_modules/
+atlassian-ide-plugin.xml
+
+### Eclipse ###
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+
+# Eclipse Core
+.project
+
+### VisualStudioCode ###
+.vscode
+
+
+# Glide package manager
+.glide
+vendor/
+
+# Ignore artifacts directory
+bin/

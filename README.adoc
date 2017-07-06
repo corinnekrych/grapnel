@@ -1,0 +1,72 @@
+= Grapnel
+
+== Building from source [[building]]
+
+The following guide is mainly targeted towards a Linux or Mac OSX development
+machine.
+
+=== Prerequisites [[prerequisites]]
+
+You need to install:
+
+* `go` (>= v1.7)
+* `git`
+* `make`
+
+==== Check your Go version [[check-go-version]]
+
+Run the following command to find out your Go version.
+
+----
+$ go version
+----
+
+*You must at least have Go version 1.7.*
+
+See <<fetch-dependencies>> to see an explanation on how we deal with
+dependencies.
+
+==== Install glide [[glide-setup]]
+
+This project uses link:https://glide.sh/[glide] as a package manager for Go.
+
+To install glide:
+
+---
+$ make sysdeps
+---
+
+=== Get the code [[get-the-code]]
+
+Assuming you have Go installed and configured (have `$GOPATH` setup) here is
+how to build.
+
+Check out the code
+
+----
+$ git clone https://github.com/corinnekrych/grapnel $GOPATH/src/github.com/corinnekrych/grapnel
+----
+
+=== Build [[build]]
+
+Build:
+
+----
+$ cd $GOPATH/src/github.com/corinnekrych/grapnel
+$ make build
+----
+
+Run:
+
+----
+$ make run
+----
+
+Clean:
+
+This removes all downloaded dependencies, all generated code and compiled
+artifacts.
+
+----
+$ make clean
+----
