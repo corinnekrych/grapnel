@@ -42,8 +42,14 @@ dev: deps
 	go main
 
 $(VENDOR_DIR): glide.yaml
-	$GOPATH/bin/glide install
+	$(GOPATH)/bin/glide install
 	touch $(VENDOR_DIR)
+
+.PHONY: clean
+## clean build dependencies.
+clean:
+	rm -rf $(VENDOR_DIR)
+	rm -rf glide.lock
 
 .PHONY: deps
 ## Download build dependencies.
@@ -62,4 +68,4 @@ build: deps format-go-code
 .PHONY: run
 ## Run Grapnel service.
 run: build
-	bin/$(BINARY)
+	bin/$(BINARY) --config config.yaml
