@@ -32,9 +32,9 @@ This project uses link:https://glide.sh/[glide] as a package manager for Go.
 
 To install glide:
 
----
+----
 $ make sysdeps
----
+----
 
 === Get the code [[get-the-code]]
 
